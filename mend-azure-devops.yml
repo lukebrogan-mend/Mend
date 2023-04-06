@@ -23,14 +23,12 @@ steps:
 - script: |
 
     ### Build the application with your required package manager, e.g: ###
-    #
     # - task: NodeTool@0
     # - task: Maven@0
     # - task: NuGetCommand@0
     # - task: Gradle@0
     # - task: PythonScript@0
 
-    #
     ### Download the Mend Unified CLI ###
     echo Downloading Mend CLI
     curl https://downloads.mend.io/production/unified/latest/linux_amd64/mend -o /usr/local/bin/mend && chmod +x /usr/local/bin/mend
