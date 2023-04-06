@@ -12,9 +12,11 @@
 #
 name: 'mend-cli-scan'
 
-# Define your own pipeline trigger here:
+# Define your own pipeline trigger here, however this example is for scanning on a push to the main or release branches.  
+# This is the ideal time to scan so that an SBOM can be created for software releases and is also managed for released software.
 trigger:
-- none
+- main
+- release*
 
 pool:
   vmImage: ubuntu-latest
